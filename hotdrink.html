@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albero Cafe Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="albero-logo.jpg" alt="Albero Cafe Logo" class="logo">
+            <h1>ALBERO</h1><br>
+            <p><i class="fas fa-map-marker-alt" style="color:rgb(155, 155, 155); font-size: 20px;"></i>دهۆك، مالتا، پشت شقێت روژ ستی   </p>
+            <p  style="color:  rgb(125, 125, 125); font-size: 18px;font-family: 'Roboto', sans-serif;"><i class="fas fa-globe" style="color: rgb(155, 155, 155); font-size: 20px;"></i> wi-fi password:Albero2024</p>
+            <p><i class="fas fa-phone-alt" style="font-size:18px"></i> <a href="tel:+2298 464 0750">2298 464 0750</a></p>
+          <br>
+          <span class="go-back-icon" onclick="goBack()">&#8592;</span>
+        </div>
+    </header>
+
+    <nav class="categories">
+        <a href="index.html" class="category">خارن</a>
+        <a href="drink.html" class="category active">ڤەخارن</a>
+        <a href="dessert.html" class="category">شرینی و چه‌ره‌زات</a>
+        <a href="hookah1.html" class="category">نه‌رگیله‌</a>
+    </nav>
+
+    <main class="menu">
+        <!-- Food Menu -->
+        <section class="menu-section" id="drinks">
+            <div class="card">
+                <img src="Drinks/Hot drinks/hotdrink.jpeg" alt="hot drink">
+                <div class="card-content">
+                    <h3>ئیسپریسوو سینگل</h3>
+                    <p>3,000 د.ع</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Drinks/Hot drinks/2.jpeg" alt="hot drink">
+                <div class="card-content">
+                    <h3>کاپاچینوو</h3>
+                    <p>4,000 د.ع</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Drinks/Hot drinks/3.jpeg" alt="hot drink">
+                <div class="card-content">
+                    <h3>قەهوا تورکی</h3>
+                    <p>3,000 د.ع</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Drinks/Hot drinks/4.jpeg" alt="hot drink">
+                <div class="card-content">
+                    <h3>قەهوا کەزان</h3>
+                    <p>3,000 د.ع</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Drinks/Hot drinks/5.jpeg" alt="hot drink">
+                <div class="card-content">
+                    <h3>ئەمریکانو</h3>
+                    <p>4,000 د.ع</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Drinks/Hot drinks/6.jpeg" alt="hot drink">
+                <div class="card-content">
+                    <h3>هووت چکلیت</h3>
+                    <p>3,000 د.ع</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Drinks/Hot drinks/7.jpeg" alt="hot drink">
+                <div class="card-content">
+                    <h3>نیسکافی</h3>
+                    <p>3,000 د.ع</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Drinks/Hot drinks/8.jpeg" alt="hot drink">
+                <div class="card-content">
+                    <h3>شیر</h3>
+                    <p>2,000 د.ع</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Drinks/Hot drinks/9.jpeg" alt="hot drink">
+                <div class="card-content">
+                    <h3>شیر چا</h3>
+                    <p>1,000 د.ع</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Drinks/Hot drinks/10.jpeg" alt="hot drink">
+                <div class="card-content">
+                    <h3>چا</h3>
+                    <p>500 د.ع</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="food">
+            <div id="modal-description-container"></div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(product) {
+            const modal = document.getElementById("modal");
+            const title = document.getElementById("modal-title");
+            const image = document.getElementById("modal-image");
+            const descriptionContainer = document.getElementById("modal-description-container");
+
+            const products = {
+                drink1: {
+                    title: "ئیسپریسوو سینگل",
+                    image: "Drinks/Hot drinks/hotdrink.jpeg",
+                    details: [
+                        { description: "ئیسپریسوو سینگل", price: "3,000 د.ع" },
+                    ],
+                },
+                drink2: {
+                    title: "کاپاچینوو",
+                    image: "Drinks/Hot drinks/2.jpeg",
+                    details: [
+                        { description: "کاپاچینوو", price: "4,000 د.ع" },
+                    ],
+                },
+                drink3: {
+                    title: "قەهوا تورکی",
+                    image: "Drinks/Hot drinks/3.jpeg",
+                    details: [
+                        { description: "قەهوا تورکی", price: "3,000 د.ع" },
+                    ],
+                },
+                drink4: {
+                    title: "قەهوا کەزان",
+                    image: "Drinks/Hot drinks/4.jpeg",
+                    details: [
+                        { description: "قەهوا کەزان", price: "3,000 د.ع" },
+                    ],
+                },
+                drink5: {
+                    title: "ئەمریکانو",
+                    image: "Drinks/Hot drinks/5.jpeg",
+                    details: [
+                        { description: "ئەمریکانو", price: "4,000 د.ع" },
+                    ],
+                },
+                drink6: {
+                    title: "هووت چکلیت",
+                    image: "Drinks/Hot drinks/6.jpeg",
+                    details: [
+                        { description: "هووت چکلیت", price: "3,000 د.ع" },
+                    ],
+                },
+                drink7: {
+                    title: "نیسکافی",
+                    image: "Drinks/Hot drinks/7.jpeg",
+                    details: [
+                        { description: "نیسکافی", price: "3,000 د.ع" },
+                    ],
+                },
+                drink8: {
+                    title: "شیر",
+                    image: "Drinks/Hot drinks/8.jpeg",
+                    details: [
+                        { description: "شیر", price: "2,000 د.ع" },
+                    ],
+                },
+                drink9: {
+                    title: "شیر چا",
+                    image: "Drinks/Hot drinks/9.jpeg",
+                    details: [
+                        { description: "شیر چا", price: "1,000 د.ع" },
+                    ],
+                },
+                drink10: {
+                    title: "چا",
+                    image: "Drinks/Hot drinks/10.jpeg",
+                    details: [
+                        { description: "چا", price: "500 د.ع" },
+                    ],
+                },
+            };
+
+            const productData = products[product];
+            if (productData) {
+                title.innerText = productData.title;
+                image.src = productData.image;
+                descriptionContainer.innerHTML = productData.details
+                    .map(detail => `<div class="modal-info"><p>${detail.description}</p><p id="modal-price">${detail.price}</p></div>`)
+                    .join("");
+                modal.style.display = "flex";
+            }
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("modal");
+            modal.style.display = "none";
+        }
+    </script>
+    <script src="script.js"></script>
+    <br><br>
+    <p  style="color: #ffffff; text-align:center ;font-size: 12px;">  All Rights Reserved by 
+        <a href="https://www.instagram.com/nationalcgk/" style="color: #27ae60; text-align:center ;">
+            cgk.kurd©<i class="fa fa-love"></i></a></p>
+</body>
+</html>

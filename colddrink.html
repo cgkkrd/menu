@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albero Cafe Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="albero-logo.jpg" alt="Albero Cafe Logo" class="logo">
+            <h1>ALBERO</h1><br>
+            <p><i class="fas fa-map-marker-alt" style="color:rgb(155, 155, 155); font-size: 20px;"></i>دهۆك، مالتا، پشت شقێت روژ ستی   </p>
+            <p  style="color:  rgb(125, 125, 125); font-size: 18px;font-family: 'Roboto', sans-serif;"><i class="fas fa-globe" style="color: rgb(155, 155, 155); font-size: 20px;"></i> wi-fi password:Albero2024</p>
+            <p><i class="fas fa-phone-alt" style="font-size:18px"></i> <a href="tel:+2298 464 0750">2298 464 0750</a></p>
+          <br>
+          <span class="go-back-icon" onclick="goBack()">&#8592;</span>
+        </div>
+    </header>
+
+    <nav class="categories">
+        <a href="index.html" class="category">خارن</a>
+        <a href="drink.html" class="category active">ڤەخارن</a>
+        <a href="dessert.html" class="category">شرینی و چه‌ره‌زات</a>
+        <a href="hookah1.html" class="category">نه‌رگیله‌</a>
+    </nav>
+
+    <main class="menu">
+        <!-- Food Menu -->
+        <section class="menu-section" id="drinks">
+            <div class="card">
+                <img src="Drinks/Cold drinks/colddrink.jpeg" alt="cold drink">
+                <div class="card-content">
+                    <h3>ریدبوول</h3>
+                </div>
+                <div class="menu-icon" onclick="openModal('drink1'); event.stopPropagation();">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Drinks/Cold drinks/2.jpeg" alt="cold drink">
+                <div class="card-content">
+                    <h3>سمارت</h3>
+                </div>
+                <div class="menu-icon" onclick="openModal('drink2'); event.stopPropagation();">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Drinks/Cold drinks/3.jpeg" alt="cold drink">
+                <div class="card-content">
+                    <h3>سمارت دراگون</h3>
+                </div>
+                <div class="menu-icon" onclick="openModal('drink3'); event.stopPropagation();">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Drinks/Cold drinks/4.jpeg" alt="cold drink">
+                <div class="card-content">
+                    <h3>پلنگ علک</h3>
+                </div>
+                <div class="menu-icon" onclick="openModal('drink4'); event.stopPropagation();">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Drinks/Cold drinks/5.jpeg" alt="cold drink">
+                <div class="card-content">
+                    <h3>پلنگ سبیرماینت</h3>
+                </div>
+                <div class="menu-icon" onclick="openModal('drink5'); event.stopPropagation();">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Drinks/Cold drinks/6.jpeg" alt="cold drink">
+                <div class="card-content">
+                    <h3>وایت تایگەر</h3>
+                </div>
+                <div class="menu-icon" onclick="openModal('drink6'); event.stopPropagation();">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Drinks/Cold drinks/7.jpeg" alt="cold drink">
+                <div class="card-content">
+                    <h3>تایگەر</h3>
+                </div>
+                <div class="menu-icon" onclick="openModal('drink7'); event.stopPropagation();">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Drinks/Cold drinks/8.jpeg" alt="cold drink">
+                <div class="card-content">
+                    <h3>سودا لیموون</h3>
+                </div>
+                <div class="menu-icon" onclick="openModal('drink8'); event.stopPropagation();">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Drinks/Cold drinks/9.jpeg" alt="cold drink">
+                <div class="card-content">
+                    <h3>سودا</h3>
+                </div>
+                <div class="menu-icon" onclick="openModal('drink9'); event.stopPropagation();">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Drinks/Cold drinks/10.jpeg" alt="cold drink">
+                <div class="card-content">
+                    <h3>باربیکان</h3>
+                    <p>2,000 د.ع</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="Drinks/Cold drinks/11.jpeg" alt="cold drink">
+                <div class="card-content">
+                    <h3>پیپسی</h3>
+                    <p>1,000 د.ع</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Drinks/Cold drinks/12.jpeg" alt="cold drink">
+                <div class="card-content">
+                    <h3>میرەندا</h3>
+                    <p>1,000 د.ع</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Drinks/Cold drinks/13.jpeg" alt="cold drink">
+                <div class="card-content">
+                    <h3>سڤن ئاپ</h3>
+                    <p>1,000 د.ع</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Drinks/Cold drinks/14.jpeg" alt="cold drink">
+                <div class="card-content">
+                    <h3>فریشا لیموون</h3>
+                    <p>1,000 د.ع</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Drinks/Cold drinks/15.jpeg" alt="cold drink">
+                <div class="card-content">
+                    <h3>ئاڤ</h3>
+                    <p>500 د.ع</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="food">
+            <div id="modal-description-container"></div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(product) {
+            const modal = document.getElementById("modal");
+            const title = document.getElementById("modal-title");
+            const image = document.getElementById("modal-image");
+            const descriptionContainer = document.getElementById("modal-description-container");
+
+            const products = {
+                drink1: {
+                    title: "ریدبوول",
+                    image: "Drinks/Cold drinks/colddrink.jpeg",
+                    details: [
+                        { description: "عادی", price: "3,000 د.ع" },
+                        { description: "مەکسیکی", price: "4,000 د.ع" },
+                    ],
+                },
+                drink2: {
+                    title: "سمارت",
+                    image: "Drinks/Cold drinks/2.jpeg",
+                    details: [
+                        { description: "عادی", price: "2,000 د.ع" },
+                        { description: "مەکسیکی", price: "3,000 د.ع" },
+                    ],
+                },
+                drink3: {
+                    title: "سمارت دراگون",
+                    image: "Drinks/Cold drinks/3.jpeg",
+                    details: [
+                        { description: "عادی", price: "2,000 د.ع" },
+                        { description: "مەکسیکی", price: "3,000 د.ع" },
+                    ],
+                },
+                drink4: {
+                    title: "پلنگ علک",
+                    image: "Drinks/Cold drinks/4.jpeg",
+                    details: [
+                        { description: "عادی", price: "2,000 د.ع" },
+                        { description: "مەکسیکی", price: "3,000 د.ع" },
+                    ],
+                },
+                drink5: {
+                    title: "پلنگ سبیرماینت",
+                    image: "Drinks/Cold drinks/5.jpeg",
+                    details: [
+                        { description: "عادی", price: "2,000 د.ع" },
+                        { description: "مەکسیکی", price: "3,000 د.ع" },
+                    ],
+                },
+                drink6: {
+                    title: "وایت تایگەر",
+                    image: "Drinks/Cold drinks/6.jpeg",
+                    details: [
+                        { description: "عادی", price: "2,000 د.ع" },
+                        { description: "مەکسیکی", price: "3,000 د.ع" },
+                    ],
+                },
+                drink7: {
+                    title: "تایگەر",
+                    image: "Drinks/Cold drinks/7.jpeg",
+                    details: [
+                        { description: "عادی", price: "2,000 د.ع" },
+                        { description: "مەکسیکی", price: "3,000 د.ع" },
+                    ],
+                },
+                drink8: {
+                    title: "سودا لیموون",
+                    image: "Drinks/Cold drinks/8.jpeg",
+                    details: [
+                        { description: "عادی", price: "1,000 د.ع" },
+                        { description: "مەکسیکی", price: "3,000 د.ع" },
+                    ],
+                },
+                drink9: {
+                    title: "سودا",
+                    image: "Drinks/Cold drinks/9.jpeg",
+                    details: [
+                        { description: "عادی", price: "1,000 د.ع" },
+                        { description: "مەکسیکی", price: "3,000 د.ع" },
+                    ],
+                },
+                drink10: {
+                    title: "باربیکان",
+                    image: "Drinks/Cold drinks/10.jpeg",
+                    details: [
+                        { description: "باربیکان", price: "2,000 د.ع" },
+                    ],
+                },
+                drink11: {
+                    title: "پیپسی",
+                    image: "Drinks/Cold drinks/11.jpeg",
+                    details: [
+                        { description: "پیپسی", price: "1,000 د.ع" },
+                    ],
+                },
+                drink12: {
+                    title: "میرەندا",
+                    image: "Drinks/Cold drinks/12.jpeg",
+                    details: [
+                        { description: "میرەندا", price: "1,000 د.ع" },
+                    ],
+                },
+                drink13: {
+                    title: "سڤن ئاپ",
+                    image: "Drinks/Cold drinks/13.jpeg",
+                    details: [
+                        { description: "سڤن ئاپ", price: "1,000 د.ع" },
+                    ],
+                },
+                drink14: {
+                    title: "فریشا لیموون",
+                    image: "Drinks/Cold drinks/14.jpeg",
+                    details: [
+                        { description: "فریشا لیموون", price: "1,000 د.ع" },
+                    ],
+                },
+                drink15: {
+                    title: "ئاڤ",
+                    image: "Drinks/Cold drinks/15.jpeg",
+                    details: [
+                        { description: "ئاڤ", price: "500 د.ع" },
+                    ],
+                },
+
+            };
+
+            const productData = products[product];
+            if (productData) {
+                title.innerText = productData.title;
+                image.src = productData.image;
+                descriptionContainer.innerHTML = productData.details
+                    .map(detail => `<div class="modal-info"><p>${detail.description}</p><p id="modal-price">${detail.price}</p></div>`)
+                    .join("");
+                modal.style.display = "flex";
+            }
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("modal");
+            modal.style.display = "none";
+        }
+    </script>
+    <script src="script.js"></script>
+    <br><br>
+    <p  style="color: #ffffff; text-align:center ;font-size: 12px;">  All Rights Reserved by 
+        <a href="https://www.instagram.com/nationalcgk/" style="color: #27ae60; text-align:center ;">
+            cgk.kurd©<i class="fa fa-love"></i></a></p>
+</body>
+</html>
