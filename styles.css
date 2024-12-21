@@ -378,7 +378,7 @@ p:last-child {
         width: 600px; /* Adjust modal width for larger screens */
     }
 }
-@media (max-width: 768px) {
+@media (min-width: 1024px) and (max-width: 1366px) {
     .header-content .logo {
         width: 100%;
         height: 400px;
